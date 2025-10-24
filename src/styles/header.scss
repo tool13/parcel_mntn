@@ -1,0 +1,22 @@
+.header {
+    min-height: 100vh;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1920px;
+        padding: 290px 80px 240px;
+    }
+
+    &__title {
+        max-width: 956px;
+    }
+
+    &__text {
+        margin: 32px 0;
+        font-family: "ChronicleDisplay-Bold";
+        font-size: 88px;
+        text-transform: capitalize;
+    }
+}

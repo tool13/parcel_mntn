@@ -1,0 +1,10 @@
+.follow {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__title {
+        font-size: 18px;
+        writing-mode: vertical-rl;
+    }
+}

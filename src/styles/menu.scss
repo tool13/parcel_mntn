@@ -1,0 +1,22 @@
+.menu {
+    font-size: 18px;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1920px;
+        padding: 60px 80px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__account {
+        display: flex;
+        gap: 10px;
+    }
+}

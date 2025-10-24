@@ -9,5 +9,8 @@
     "@parcel/transformer-sass": "^2.16.0",
     "parcel": "^2.16.0",
     "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "normalize-css": "^2.3.1"
   }
 }

@@ -1,0 +1,21 @@
+.controls {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    &__btn {
+        width: 100%;
+        min-width: 42px;
+        min-height: 52px;
+        border: none;
+        border-right: 2px solid rgba($color: #fff, $alpha: .5);
+        padding: 0;
+        padding-right: 32px;
+        text-align: right;
+        font-size: 18px;
+        background-color: transparent;
+        color: #fff;
+    }
+}

@@ -7,11 +7,129 @@
     <link rel="stylesheet" type="text/css" href="styles.scss">
   </head>
   <body>
+    <nav class="menu">
+      <div class="menu__wrapper">
+        <a href="#" class="menu__logo">
+          <img src="./images/logo.svg" alt="logo mntn" width="108" height="24">
+        </a>
+        <ul class="menu__links">
+          <li class="menu__item"><a href="#" class="menu__link">Equipment</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+        </ul>
+        <a href="#" class="menu__account">
+          <img src="./images/user.svg" alt="user icon" width="20" height="20">
+          Account
+        </a>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__follow follow">
+          <h4 class="follow__title">Follow us</h4>
+          <a href="#" class="follow__item"><img src="./images/insta.svg" alt="instagram" width="20" height="20"></a>
+          <a href="#" class="follow__item"><img src="./images/twitter.svg" alt="twitter" width="21" height="17"></a>
+        </div>
+
+        <div class="header__title">
+          <span class="header__subtitle subtitle">A Hiking guide</span>
+          <h1 class="header__text">Be prepared for the Mountains and beyond!</h1>
+          <span class="header__hint">scroll down</span>
+        </div>
+
+        <div class="header__controls controls">
+          <ul class="controls__list">
+            <li class="controls__item"><button class="controls__btn">Start</button></li>
+            <li class="controls__item"><button class="controls__btn">01</button></li>
+            <li class="controls__item"><button class="controls__btn">02</button></li>
+            <li class="controls__item"><button class="controls__btn">03</button></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <secion class="steps">
+        <div class="container">
+          <ol class="steps__list">
+            <li class="steps__item">
+              <div class="steps__descr">
+                <p class="steps__subtitle subtitle">GEt Started</p>
+                <h2 class="steps__title">What level of  hiker are you?</h2>
+                <p class="steps__text">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
+                <a href="#" class="steps__link">read more</a>
+              </div>
+              <div class="steps__pic">
+                <picture>
+                  <source srcset="url:./images/step-1.jpg?as=webp" type="image/webp" />
+                  <img class="steps__img" src="url:./images/step-1.jpg" />
+                </picture>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__pic">
+                <picture>
+                  <source srcset="url:./images/step-2.jpg?as=webp" type="image/webp" />
+                  <img class="steps__img" src="url:./images/step-2.jpg" />
+                </picture>
+              </div>
+              <div class="steps__descr">
+                <p class="steps__subtitle subtitle">Hiking Essentials</p>
+                <h2 class="steps__title">Picking the right Hiking Gear!</h2>
+                <p class="steps__text">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet. </p>
+                <a href="#" class="steps__link">read more</a>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__descr">
+                <p class="steps__subtitle subtitle">where you go is the key</p>
+                <h2 class="steps__title">Understand Your Map & Timing</h2>
+                <p class="steps__text">To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction.. </p>
+                <a href="#" class="steps__link">read more</a>
+              </div>
+              <div class="steps__pic">
+                <picture>
+                  <source srcset="url:./images/step-3.jpg?as=webp" type="image/webp" />
+                  <img class="steps__img" src="url:./images/step-3.jpg" />
+                </picture>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </secion>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__descr">
+          <a href="#" class="footer__logo">
+            <img src="./images/logo.svg" alt="logo mntn" width="108" height="24">
+          </a>
+          <p class="footer__text">Get out there & discover your next slope, mountain & destination!</p>
+          <a href="#" class="footer__copy">Copyright 2023 MNTN, Inc. Terms & Privacy</a>
+        </div>
+        <div class="footer__menu">
+          <h3 class="footer__title">More on The Blog</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">About MNTN</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Contributors & Writers</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Write For Us</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu">
+          <h3 class="footer__title">More on MNTN</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">The Team</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Jobs</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     
-    <picture>
-      <source srcset="url:./images/step-1.jpg?as=webp" type="image/webp" />
-      <img src="url:./images/step-1.jpg" />
-    </picture>
     <script src='scripts.js'></script>
   </body>
 </html>

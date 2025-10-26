@@ -1,4 +1,11 @@
 .controls {
+    position: sticky;
+    width: fit-content;
+    margin-left: auto;
+    top: 320px;
+    right: 80px;
+    float: right;
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -17,5 +24,10 @@
         font-size: 18px;
         background-color: transparent;
         color: #fff;
+        transition: border-color 0.3s ease;
+
+        &.active {
+            border-color: rgba($color: #fff, $alpha: 1);
+        }
     }
 }

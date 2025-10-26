@@ -1,5 +1,5 @@
 document.querySelectorAll(".controls__btn").forEach(control => {
-    control.addEventListener("click", (evt) => {
+    control.addEventListener("click", evt => {
         let currentSection = document.querySelector(`[data-section="${evt.target.dataset.value}"]`);
         currentSection.scrollIntoView({ block: "center", behavior: "smooth" });
     })

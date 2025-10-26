@@ -1,8 +1,9 @@
 .header {
-    min-height: 100vh;
+    min-height: 1200px;
 
     &__wrapper {
         max-width: 1920px;
+        margin: 0 auto;
         padding: 0 80px;
     }
 

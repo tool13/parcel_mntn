@@ -1,10 +1,12 @@
 .controls {
     position: fixed;
-    width: fit-content;
-    margin-left: auto;
     top: 320px;
     right: 80px;
-    float: right;
+    z-index: 1;
+
+    @media (max-width: 1280px) {
+        right: 25px;
+    }
 
     &__list {
         display: flex;

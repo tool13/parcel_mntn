@@ -7,7 +7,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 25px;
         margin-top: 200px;
+
+        @media (max-width: 980px) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 100px;
+        }
 
         &.active .steps__pic {
             opacity: 1;
@@ -18,6 +25,22 @@
             opacity: 1;
             transform: translateX(0);
         }
+
+        &:nth-child(2) {
+            @media (max-width: 1700px) {
+                & .steps__descr {
+                    padding-right: 110px;
+                    padding-left: 40px;
+                }
+            }
+
+            @media (max-width: 980px) {
+                flex-direction: column-reverse;
+                & .steps__descr {
+                    padding-left: 0;
+                }
+            }
+        }
     }
 
     &__descr {
@@ -27,6 +50,16 @@
         opacity: 0;
         transform: translateX(-50%);
         transition: opacity .4s ease, transform .4s ease-in-out;
+
+        @media (max-width: 1280px) {
+            padding-left: 0;
+            max-width: 580px;
+        }
+
+        @media (max-width: 980px) {
+            max-width: 100%;
+            padding-right: 110px;
+        }
 
         &::before {
             content: "0" counter(counter);
@@ -51,6 +84,10 @@
         margin: 27px 0;
         font-family: "ChronicleDisplay-Bold";
         font-size: 64px;
+
+        @media (max-width: 1280px) {
+            font-size: 44px;
+        }
     }
 
     &__text {

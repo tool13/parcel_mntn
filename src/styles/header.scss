@@ -23,4 +23,31 @@
         font-size: 88px;
         text-transform: capitalize;
     }
+
+    &__hint {
+        display: flex;
+        gap: 15px;
+    }
+
+    @keyframes arrow-move {
+        0% {
+            transform: translateY(0px);
+        }
+        25% {
+            transform: translateY(15px);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+        75% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    &__hint-arrow {
+        animation: 1s ease-out 0s arrow-move;
+    }
 }

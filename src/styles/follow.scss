@@ -7,4 +7,12 @@
         font-size: 18px;
         writing-mode: vertical-rl;
     }
+
+    &__item {
+        transition: color .3s ease;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
 }

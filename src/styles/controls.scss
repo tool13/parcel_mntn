@@ -1,5 +1,5 @@
 .controls {
-    position: sticky;
+    position: fixed;
     width: fit-content;
     margin-left: auto;
     top: 320px;
@@ -17,17 +17,18 @@
         min-width: 42px;
         min-height: 52px;
         border: none;
-        border-right: 2px solid rgba($color: #fff, $alpha: .5);
+        border-right: 2px solid #fff;
         padding: 0;
         padding-right: 32px;
         text-align: right;
         font-size: 18px;
         background-color: transparent;
         color: #fff;
-        transition: border-color 0.3s ease;
+        transition: opacity 0.3s ease;
+        opacity: .5;
 
         &.active {
-            border-color: rgba($color: #fff, $alpha: 1);
+            opacity: 1;
         }
     }
 }

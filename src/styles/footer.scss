@@ -10,6 +10,7 @@
     &__descr {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         margin-right: auto;
     }
 
@@ -22,6 +23,12 @@
         margin-top: auto;
         opacity: 0.5;
         font-family: "Gilroy-Medium";
+
+        transition: opacity .3s ease;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     &__title {
@@ -34,7 +41,23 @@
         font-family: "Gilroy-Medium";
     }
 
+    &__link {
+        transition: color .3s ease;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
     &__menu {
         margin-left: 10%;
+    }
+
+    &__logo {
+        transition: color .3s ease;
+
+        &:hover {
+            color: $accent-color;
+        }
     }
 }

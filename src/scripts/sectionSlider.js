@@ -1,7 +1,10 @@
 document.querySelectorAll(".controls__btn").forEach(control => {
     control.addEventListener("click", evt => {
         let currentSection = document.querySelector(`[data-section="${evt.target.dataset.value}"]`);
-        currentSection.scrollIntoView({ block: "center", behavior: "smooth" });
+        currentSection.scrollIntoView({ 
+            block: parseInt(evt.target.dataset.value) === 1 ? "start" : "center",
+            behavior: "smooth"
+         });
     })
 })
 

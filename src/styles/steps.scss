@@ -57,8 +57,21 @@
         line-height: 2;
     }
 
+    &__arrow {
+        transition: transform 1s ease;
+    }
+
     &__link {
+        display: flex;
+        align-items: flex-end;
+        gap: 15px;
         margin-top: 27px;
         color: $accent-color;
+
+        &:hover {
+            & .steps__arrow {
+                transform: translateX(100px);
+            }
+        }
     }
 }

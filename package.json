@@ -1,15 +1,14 @@
 {
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "prebuild": "rmdir dist /s /q"
+    "clean:output": "rimraf dist",
+    "start": "npm run clean:output && parcel src/index.html",
+    "build": "npm run clean:output && parcel build src/index.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.0",
     "parcel": "^2.16.0",
-    "parcel-packager-svg-sprite": "^2.0.1",
-    "parcel-transformer-svg-sprite": "^2.0.1",
+    "rimraf": "^6.0.1",
     "sharp": "^0.33.5"
   },
   "dependencies": {
